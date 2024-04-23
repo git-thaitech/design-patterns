@@ -110,10 +110,10 @@ Các phương thức Factory có thể không hữu ích khi:
 - Các lớp thực hiện sản phẩm không có khả năng thay đổi đáng kể.
 
 ## Các Bước Triển Khai Factory Method
-1. **Định Nghĩa Giao Diện Sản Phẩm**: Tất cả các sản phẩm phải theo một giao diện hoặc lớp trừu tượng cụ thể nào đó khai báo các phương thức mà tất cả các sản phẩm cụ thể phải thực hiện.
-2. **Tạo Sản Phẩm Cụ Thể**: Thực hiện các biến thể khác nhau của sản phẩm được định nghĩa bởi giao diện sản phẩm.
-3. **Tạo Lớp Tạo Ra Trừu Tượng**: Khai báo phương thức factory trong lớp tạo ra mà trả về một sản phẩm của loại được chỉ định bởi giao diện sản phẩm. Phương thức này thường chứa logic tạo sản phẩm.
-4. **Định Nghĩa Các Lớp Tạo Ra Cụ Thể**: Thực hiện phương thức factory theo các cách khác nhau để tạo và trả về các loại sản phẩm khác nhau.
+1. **Tạo một interface chung cho các product**: Tất cả các sản phẩm phải theo một giao diện hoặc lớp trừu tượng cụ thể nào đó khai báo các phương thức mà tất cả các sản phẩm cụ thể phải thực hiện.
+2. **Tạo các product cụ thể**: Thực hiện các biến thể khác nhau của sản phẩm được định nghĩa bởi giao diện sản phẩm.
+3. **Tạo abstract factory**: Khai báo phương thức factory trong lớp tạo ra mà trả về một sản phẩm của loại được chỉ định bởi giao diện sản phẩm. Phương thức này thường chứa logic tạo sản phẩm.
+4. **Định Nghĩa từng factory cụ thể của từng product**: Thực hiện phương thức factory theo các cách khác nhau để tạo và trả về các loại sản phẩm khác nhau.
 5. **Sử Dụng Phương Thức Factory**: Mã nguồn khách hàng tạo một đối tượng của lớp tạo ra cụ thể và gọi phương thức factory của nó để nhận một đối tượng sản phẩm mới.
 
 ## Ví Dụ
