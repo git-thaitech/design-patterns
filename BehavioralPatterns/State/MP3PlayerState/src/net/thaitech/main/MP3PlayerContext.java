@@ -1,10 +1,12 @@
 package net.thaitech.main;
 
+import net.thaitech.states.*;
+
 public class MP3PlayerContext {
     private State state;
 
     public MP3PlayerContext() {
-        state = new StoppedState(); // Initial state
+        this.state = new StoppedState(this); // Default state
     }
 
     public void setState(State state) {
@@ -12,7 +14,10 @@ public class MP3PlayerContext {
     }
 
     public void pressPlay() {
-        state.pressPlay(this);
+        state.pressPlay();
+    }
+
+    public void pressStop() {
+        state.pressStop();
     }
 }
-
