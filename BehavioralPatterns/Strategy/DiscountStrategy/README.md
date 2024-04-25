@@ -9,4 +9,5 @@ Mỗi chiến lược này được định nghĩa để xử lý các tình hu�
 
 - **Context (TaxCalculator)**: TaxCalculator đóng vai trò là context. Nó giữ một tham chiếu đến TaxStrategy và có thể thay đổi chiến lược của nó tại thời điểm chạy. Context không tính toán thuế trực tiếp mà ủy thác nhiệm vụ này cho chiến lược thuế mà nó giữ. Điều này được thực hiện thông qua phương thức calculateTax, nó chỉ đơn giản là gọi phương thức calculateTax của chiến lược hiện tại.
 
-  <img width="852" alt="image" src="https://github.com/git-thaitech/design-patterns/assets/72333463/23c1a02e-f568-4aa9-a154-a7266e78fa16">
+<img width="894" alt="image" src="https://github.com/git-thaitech/design-patterns/assets/72333463/6313fb7c-a173-4bee-8e26-74734bd624c6">
+
